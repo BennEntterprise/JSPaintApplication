@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width , initial-scale=1">
+    <title>JS Paint App</title>
+    <link rel="stylesheet" href="mainstyles.css">
+    <script src="jstut7.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="toolbar">
+        <a class ="selected" href="#" id="open" onclick="OpenImage()"><img src="icons/open-icon.png"></a>
+        <a  href="#" id="save" onclick="SaveImage()"><img src="icons/save-icon.png"></a>
+        <a  href="#" id="brush" onclick="ChangeTool('brush')"><img src="icons/brush-icon.png"></a>
+        <a  href="#" id="line" onclick="ChangeTool('line')"><img src="icons/line-icon.png"></a>
+        <a  href="#" id="rectangle" onclick="ChangeTool('rectangle')"><img src="icons/rectangle-icon.png"></a>
+        <a  href="#" id="circle" onclick="ChangeTool('circle')"><img src="icons/circle-icon.png"></a>
+        <a  href="#" id="ellipse" onclick="ChangeTool('ellipse')"><img src="icons/ellipse-icon.png"></a>
+        <a  href="#" id="polygon" onclick="ChangeTool('polygon')"><img src="icons/polygon-icon.png"></a>
+      </div><br>
+    </div>
+
+
+      <canvas id="my-canvas" width="600" height="600"></canvas>
+      <br>
+      <div id=img-data-div">
+        <a href="#" id="img-file" download="img.png">Download Image</a>
+      </div>
+
+
+
+  </body>
+</html>
